@@ -19,6 +19,7 @@
 
     "modules-right": [
         "tray",
+        "custom/todo",
         "pulseaudio"
     ],
 
@@ -34,7 +35,7 @@
     "clock": {
         "format": "{:%I:%M %p - %a, %d %b %Y}",
         "tooltip": false,
-        "on-click": "hyprctl dispatch exec ['float; size 800 400; move 1320 150'] gnome-calendar"
+        "on-click": "/home/deprecated/.config/dotfiles/scripts/calendar.sh"
     },
 
     "cpu": {
@@ -61,7 +62,13 @@
         "format": "vol {volume}%",
         "format-bluetooth": "vol {volume}%",
         "nospacing": 1,
-        "on-click": "hyprctl dispatch exec ['float; size 750 500; move 2674 50'] pavucontrol",
+        "on-click": "/home/deprecated/.config/dotfiles/scripts/volumecontrol.sh",
         "tooltip": false
+    },
+
+    // Custom modules
+    "custom/todo": {
+        "format": "TODO!",
+        "on-click": "/home/deprecated/.config/dotfiles/scripts/todolist.sh"
     }
 }

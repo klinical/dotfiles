@@ -23,7 +23,8 @@ tooltip {
 #tray,
 #memory,
 #battery,
-#pulseaudio {
+#pulseaudio,
+#custom-todo {
     background-color: #B6BFB8;
     padding: 2px 8px;
     color: #fff;
