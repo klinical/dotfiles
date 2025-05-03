@@ -34,7 +34,7 @@
     "clock": {
         "format": "{:%I:%M %p - %a, %d %b %Y}",
         "tooltip": false,
-        "on-click": "hyprctl dispatch exec ['workspace 1 silent; float; move 1400 50'] gnome-calendar"
+        "on-click": "[ ] && then hyprctl dispatch exec ['workspace 1 silent; float; move 1400 50'] gnome-calendar || "
     },
 
     "cpu": {
