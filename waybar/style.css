@@ -3,8 +3,8 @@
     border-radius: 4;
     min-height: 0;
     font-family: "iosevka nerd font";
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 15px;
     padding: 0;
 }
 
@@ -25,27 +25,32 @@ tooltip {
 #battery,
 #pulseaudio,
 #custom-todo {
-    background-color: #B6BFB8;
-    padding: 2px 8px;
-    color: #fff;
+    border: 2px solid #232925;
+    background-color: #fff;
+    padding: 4px 8px;
+    color: #000;
     margin: 0px 2px 0px 2px;
 }
 
 #workspaces {
-    background-color: #B6BFB8;
+    border: 2px solid #232925;
+    background-color: #fff;
 }
 
 #workspaces button {
     margin: 4px;
     min-width: 0;
-    padding: 4px 8px;
-    color: #fff;
+    padding: 2px 8px;
+    color: #000;
+}
+
+#workspaces button.active {
+    background-color: #232925;
+    color: #97B3A4;
 }
 
 #workspaces button:hover {
-    color: #000;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+    background-color: #232925;
 }
 
 #workspaces button.urgent {

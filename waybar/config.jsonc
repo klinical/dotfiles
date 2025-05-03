@@ -33,7 +33,7 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p - %a, %d %b %Y}",
+        "format": "  {:%I:%M %p - %a, %d %b %Y}",
         "tooltip": false,
         "on-click": "/home/deprecated/.config/dotfiles/scripts/calendar.sh"
     },
@@ -59,8 +59,8 @@
     "pulseaudio": {
         "scroll-step": 5,
         "max-volume": 150,
-        "format": "vol {volume}%",
-        "format-bluetooth": "vol {volume}%",
+        "format": " {volume}%",
+        "format-bluetooth": " {volume}%",
         "nospacing": 1,
         "on-click": "/home/deprecated/.config/dotfiles/scripts/volumecontrol.sh",
         "tooltip": false
@@ -68,7 +68,7 @@
 
     // Custom modules
     "custom/todo": {
-        "format": "TODO!",
+        "format": " Todo",
         "on-click": "/home/deprecated/.config/dotfiles/scripts/todolist.sh"
     }
 }
