@@ -24,7 +24,16 @@
     ],
 
     "hyprland/workspaces": {
-        "all-outputs": true
+        "all-outputs": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": " ",
+            "4": "",
+            "5": " ",
+            "default": ""
+        }
     },
 
     "tray": {
@@ -33,7 +42,7 @@
     },
 
     "clock": {
-        "format": "  {:%I:%M %p - %a, %d %b %Y}",
+        "format": "{:%I:%M %p}",
         "tooltip": false,
         "on-click": "/home/deprecated/.config/dotfiles/scripts/calendar.sh"
     },

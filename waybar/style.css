@@ -3,14 +3,14 @@
     border-radius: 4;
     min-height: 0;
     font-family: "iosevka nerd font";
-    font-weight: 700;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 14px;
     padding: 0;
 }
 
-/* window#waybar {
-    background-color: rgba(236, 238, 236, 0.8);
-} */
+window#waybar {
+    background-color: #fff;
+}
 
 tooltip {
     background-color: #1d2021;
@@ -25,32 +25,28 @@ tooltip {
 #battery,
 #pulseaudio,
 #custom-todo {
-    border: 2px solid #232925;
-    background-color: #fff;
-    padding: 4px 8px;
+    padding: 2px 8px;
     color: #000;
     margin: 0px 2px 0px 2px;
 }
 
-#workspaces {
-    border: 2px solid #232925;
-    background-color: #fff;
-}
-
 #workspaces button {
-    margin: 4px;
+    margin: 2px;
     min-width: 0;
     padding: 2px 8px;
     color: #000;
 }
 
-#workspaces button.active {
-    background-color: #232925;
-    color: #97B3A4;
+#workspaces button:hover {
+    background: inherit;
+    color: inherit;
+    color: #000;
+    background-color: #B6BFB8;
 }
 
-#workspaces button:hover {
+#workspaces button.active {
     background-color: #232925;
+    color: #fff;
 }
 
 #workspaces button.urgent {
