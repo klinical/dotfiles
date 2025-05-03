@@ -1,0 +1,14 @@
+white: #FFFFFF
+
+# Inactive border
+light grey: #B6BFB8
+
+# Wallpaper, active border 
+ultra-light grey: #E4EBE6
+# Mako notifs
+ultra-light grey(v): #eceeec
+
+# Firefox active tab
+dark grey: #232925
+
+light green: #5FED83

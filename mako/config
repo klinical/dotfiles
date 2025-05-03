@@ -1,7 +1,8 @@
 output=DP-1
 max-history=3
 max-visible=3
-border-radius=2
+border-radius=4
+border-size=3
 default-timeout=15000
 anchor=bottom-right
 icon-location=left
@@ -12,7 +13,7 @@ width=350
 group-by=summary
 max-icon-size=48
 
-background-color=#FFFFFF
+background-color=#eceeec
 text-color=#0F0F0F
 border-color=#BAC3BC
 

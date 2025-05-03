@@ -1,0 +1,67 @@
+{
+    "layer": "top",
+    "output": "DP-1",
+    "spacing": 0,
+    "height": 0,
+
+    "margin-top": 6,
+    "margin-right": 14,
+    "margin-bottom": 0,
+    "margin-left": 14,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "tray",
+        "pulseaudio"
+    ],
+
+    "hyprland/workspaces": {
+        "all-outputs": true
+    },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p - %a, %d %b %Y}",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exec ['workspace 1 silent; float; move 1400 50'] gnome-calendar"
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 90
+        }
+    },
+
+    "memory": {
+        "format": "mem {percentage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 80
+        }
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "vol {volume}%",
+        "format-bluetooth": "vol {volume}%",
+        "nospacing": 1,
+        "on-click": "hyprctl dispatch exec ['workspace 1 silent; float; move 2925 50'] pavucontrol",
+        "tooltip": false
+    }
+}
