@@ -24,10 +24,17 @@ tooltip {
 #memory,
 #battery,
 #pulseaudio,
-#custom-todo {
+#custom-todo,
+#custom-power {
     padding: 2px 8px;
     color: #000;
     margin: 0px 2px 0px 2px;
+}
+
+#custom-power {
+    padding-left: 16px;
+    border-left: 1px solid #E4EBE6;
+    border-radius: 0px;
 }
 
 #workspaces button {

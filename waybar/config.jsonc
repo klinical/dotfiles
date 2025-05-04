@@ -20,7 +20,8 @@
     "modules-right": [
         "tray",
         "custom/todo",
-        "pulseaudio"
+        "pulseaudio",
+        "custom/power"
     ],
 
     "hyprland/workspaces": {
@@ -75,9 +76,16 @@
         "tooltip": false
     },
 
+
     // Custom modules
+
     "custom/todo": {
         "format": " Todo",
         "on-click": "/home/deprecated/.config/dotfiles/scripts/todolist.sh"
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "/home/deprecated/.config/dotfiles/scripts/wofi-power-menu.sh"
     }
 }
