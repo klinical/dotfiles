@@ -2,9 +2,7 @@
     border: none;
     border-radius: 4;
     min-height: 0;
-    font-family: "Monaco";
-    font-weight: 600;
-    font-size: 14px;
+    font-family: "Hack Nerd Font";
     padding: 0;
 }
 
@@ -29,10 +27,34 @@ tooltip {
     padding: 2px 8px;
     color: #000;
     margin: 0px 2px 0px 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.24);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#custom-cat_art {
+    padding: 2px 8px;
+    color: #000;
+    margin: 0px 1310px 0px 0px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.24);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#custom-launcher {
+    padding: 2px 16px 2px 20px;
+    color: #1793d0;
+    margin: 0px 2px 0px 2px;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.7);
+    border-right: 1px solid #E4EBE6;
+    border-radius: 0px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 #custom-power {
     padding-left: 16px;
+    padding-right: 20px;
     border-left: 1px solid #E4EBE6;
     border-radius: 0px;
 }
@@ -42,12 +64,14 @@ tooltip {
     min-width: 0;
     padding: 2px 8px;
     color: #000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.24);
 }
 
 #workspaces button:hover {
     background: inherit;
     color: inherit;
     color: #000;
+    text-shadow: 1px 1px 1px pink;
     background-color: #B6BFB8;
 }
 
