@@ -60,11 +60,6 @@
           "format": "\u001b[90m┌──────────────────Software──────────────────┐"
       },
       {
-          "type": "os",
-          "key": "│   OS",
-          "keyColor": "black"
-      },
-      {
           "type": "kernel",
           "key": "│ KRNL",
           "keyColor": "black"

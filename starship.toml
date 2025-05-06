@@ -1,0 +1,85 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+
+## MAIN SHELL FORMATTING
+ 
+format = '''
+[$directory](blue) $git_branch$username$hostname
+$character'''
+
+
+[username]
+show_always = false
+format = '\([$user](black)@'
+
+[hostname]
+format = '[$hostname](black)\)'
+ssh_only = true
+
+[character]
+success_symbol = '[\$](bold black)'
+error_symbol = '[\$](bold red)'
+
+[directory]
+read_only = " 󰌾"
+format = '[$path](black)[$read_only]($read_only_style)'
+
+[git_branch]
+format = 'on [$symbol$branch(:$remote_branch)](green) '
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+##
+
+
+## LANGUAGES
+
+[c]
+symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[java]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+##
+
+
+## OS SYMBOLS
+
+[os.symbols]
+Alpine = " "
+Amazon = " "
+Arch = " "
+Debian = " "
+Fedora = " "
+Gentoo = " "
+Linux = " "
+Ubuntu = " "
+Unknown = " "
+
+##
