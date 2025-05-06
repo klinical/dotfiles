@@ -1,0 +1,98 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+      "type": "file",
+      "source": "/home/zach/.config/dotfiles/images/ascii/cat2.txt",
+      "height": 1,
+      "width": 1,
+      "padding": {
+        "top": 1,
+        "left": 0,
+        "right": 2
+      },
+      "color": {
+        "1": "black"
+      }
+  },
+  "modules": [
+      "break",
+      {
+          "type": "custom",
+          "format": "\u001b[90m┌──────────────────Hardware──────────────────┐"
+      },
+      {
+          "type": "cpu",
+          "key": "│  CPU",
+          "keyColor": "black"
+      },
+      {
+          "type": "gpu",
+          "key": "│  GPU",
+          "keyColor": "black"
+      },
+      {
+        "type": "display",
+        "key": "│ DISP",
+        "keyColor": "black"
+      },
+      {
+          "type": "memory",
+          "key": "│  MEM",
+          "keyColor": "black"
+      },
+      {
+        "type": "swap",
+        "key": "│ SWAP",
+        "keyColor": "black"
+      },
+      {
+          "type": "disk",
+          "key": "│ DISK",
+          "keyColor": "black"
+      },
+      {
+          "type": "custom",
+          "format": "\u001b[90m└────────────────────────────────────────────┘"
+      },
+      "break",
+      {
+          "type": "custom",
+          "format": "\u001b[90m┌──────────────────Software──────────────────┐"
+      },
+      {
+          "type": "os",
+          "key": "│   OS",
+          "keyColor": "black"
+      },
+      {
+          "type": "kernel",
+          "key": "│ KRNL",
+          "keyColor": "black"
+      },
+      {
+          "type": "packages",
+          "key": "│ PKGS",
+          "keyColor": "black"
+      },
+      {
+          "type": "wm",
+          "key": "│   WM",
+          "keyColor": "black"
+      },
+      {
+          "type": "terminal",
+          "key": "│ TERM",
+          "keyColor": "black"
+      },
+      {
+          "type": "custom",
+          "format": "\u001b[90m└────────────────────────────────────────────┘"
+      },
+      {
+          "type": "custom",
+          "format": "                 \u001b[31m⬤ \u001b[32m⬤ \u001b[33m⬤ \u001b[34m⬤ \u001b[35m⬤ \u001b[36m⬤\u001b[0m"
+      },
+
+      "break"
+  ]
+}
