@@ -6,7 +6,7 @@
       "height": 1,
       "width": 1,
       "padding": {
-        "top": 1,
+        "top": 0,
         "left": 0,
         "right": 2
       },
@@ -39,11 +39,6 @@
           "type": "memory",
           "key": "│  MEM",
           "keyColor": "black"
-      },
-      {
-        "type": "swap",
-        "key": "│ SWAP",
-        "keyColor": "black"
       },
       {
           "type": "disk",
