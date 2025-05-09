@@ -1,2 +1,1 @@
-For first time setup, can clone this repo and symlink each directory to it's related target directory in e.g. /home/you/.config like so:
-ln -s ./kitty ~/.config/kitty
+For easy first time setup on Arch, clone this repo to ~/.config/dotfiles and use the provided install_* scripts to install and configure the base system.
