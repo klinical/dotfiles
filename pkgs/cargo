@@ -1,0 +1,1 @@
+spotify_player --no-default-features --features images,pulseaudio-backend
