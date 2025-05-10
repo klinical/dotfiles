@@ -1,17 +1,21 @@
 #!/bin/bash
 
+USER=$(whoami)
+CFG_F=/home/$USER/.config
+GIT_F=/home/$USER/Projects/dotfiles
+
 mkdir -p ~/.config
 
-ln -s /home/$(whoami)/.config/dotfiles/.bashrc /home/$(whoami)/
+ln -s $GIT_F/.bashrc /home/$USER/
 
-ln -s /home/$(whoami)/.config/dotfiles/btop /home/$(whoami)/.config/
-ln -s /home/$(whoami)/.config/dotfiles/cava /home/$(whoami)/.config/
-ln -s /home/$(whoami)/.config/dotfiles/fastfetch /home/$(whoami)/.config/
-ln -s /home/$(whoami)/.config/dotfiles/hypr /home/$(whoami)/.config/
-ln -s /home/$(whoami)/.config/dotfiles/kitty /home/$(whoami)/.config/
-ln -s /home/$(whoami)/.config/dotfiles/mako /home/$(whoami)/.config/
-ln -s /home/$(whoami)/.config/dotfiles/waybar /home/$(whoami)/.config/
-ln -s /home/$(whoami)/.config/dotfiles/wofi /home/$(whoami)/.config/
-ln -s /home/$(whoami)/.config/dotfiles/starship.toml /home/$(whoami)/.config/
+ln -s $GIT_F/btop $CFG_F
+ln -s $GIT_F/cava $CFG_F
+ln -s $GIT_F/fastfetch $CFG_F
+ln -s $GIT_F/hypr $CFG_F
+ln -s $GIT_F/kitty $CFG_F
+ln -s $GIT_F/mako $CFG_F
+ln -s $GIT_F/waybar $CFG_F
+ln -s $GIT_F/wofi $CFG_F
+ln -s $GIT_F/starship.toml $CFG_F
 
 xdg-settings set default-web-browser firefox.desktop
