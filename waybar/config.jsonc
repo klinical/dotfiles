@@ -47,7 +47,7 @@
     "clock": {
         "format": "{:%a %b %d, %OI:%M %p}",
         "tooltip": false,
-        "on-click": "/home/zach/.config/dotfiles/scripts/calendar.sh"
+        "on-click": "/home/zach/Projects/dotfiles/scripts/calendar.sh"
     },
 
     "cpu": {
@@ -96,7 +96,7 @@
         "max-volume": 150,
         "format": "  {volume}%",
         "nospacing": 1,
-        "on-click": "/home/zach/.config/dotfiles/scripts/volumecontrol.sh",
+        "on-click": "/home/zach/Projects/dotfiles/scripts/volumecontrol.sh",
         "tooltip": false
     },
 
@@ -116,19 +116,19 @@
 
     "custom/spotify": {
         "format": "",
-        "on-click": "/home/zach/.config/dotfiles/scripts/spotify.sh",
+        "on-click": "/home/zach/Projects/dotfiles/scripts/spotify.sh",
         "tooltip": false
     },
 
     "custom/todo": {
         "format": " Todo",
-        "on-click": "/home/zach/.config/dotfiles/scripts/todolist.sh",
+        "on-click": "/home/zach/Projects/dotfiles/scripts/todolist.sh",
         "tooltip": false
     },
 
     "custom/power": {
         "format": "",
-        "on-click": "/home/zach/.config/dotfiles/scripts/wofi-power-menu.sh",
+        "on-click": "/home/zach/Projects/dotfiles/scripts/wofi-power-menu.sh",
         "tooltip": false
     }
 }

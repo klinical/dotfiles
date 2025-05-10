@@ -1,1 +1,1 @@
-For easy first time setup on Arch, clone this repo to ~/.config/dotfiles and use the provided install_* scripts to install and configure the base system.
+For easy first time setup on Arch, clone this repo to ~/Projects/ and use the provided install_* scripts to install and configure the base system.
