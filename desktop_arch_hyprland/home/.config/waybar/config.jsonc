@@ -1,0 +1,84 @@
+{
+    "layer": "top",
+    "output": "DP-2",
+    "spacing": 0,
+    "height": 0,
+
+    "margin-top": 6,
+    "margin-right": 16,
+    "margin-bottom": 0,
+    "margin-left": 16,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "tray",
+        "wireplumber",
+        "custom/power"
+    ],
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "format": "{name} {icon} ",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "default": ""
+        }
+    },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%a %b %d, %OI:%M %p}",
+        "tooltip": false,
+        "on-click": "/home/zach/.config/scripts/calendar.sh"
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 90
+        }
+    },
+
+    "memory": {
+        "format": "mem {percentage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 80
+        }
+    },
+
+    "wireplumber": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "  {volume}%",
+        "nospacing": 1,
+        "on-click": "/home/zach/.config/waybar/scripts/volumecontrol.sh",
+        "tooltip": false
+    },
+
+
+    // Custom modules
+    "custom/power": {
+        "format": "",
+        "on-click": "/home/zach/.config/scripts/wofi-power-menu.sh",
+        "tooltip": false
+    }
+}
