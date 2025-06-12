@@ -1,0 +1,145 @@
+{
+    "layer": "top",
+    "output": "eDP-1",
+    "spacing": 0,
+    "height": 0,
+
+    "margin-top": 6,
+    "margin-right": 16,
+    "margin-bottom": 0,
+    "margin-left": 16,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "tray",
+	"battery",
+        "wireplumber",
+        "custom/power"
+    ],
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "format": "{name} {icon} ",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "default": ""
+        }
+    },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "{:%a %b %d, %OI:%M %p}",
+        "tooltip": false,
+        "on-click": "/home/zach/Projects/dotfiles/scripts/calendar.sh"
+    },
+
+    "battery": {
+       	"states": {
+	    "warning": 30,
+       	    "critical": 15
+       	},
+       	"format": "{icon} {capacity}%",
+       	"format-charging": " {capacity}%",
+       	"format-plugged": " {capacity}%",
+       	"format-alt": "{time} {icon}",
+       	"format-full": " {capacity}%",
+       	"format-icons": ["", "", ""]
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 90
+        }
+    },
+
+    "memory": {
+        "format": "mem {percentage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 80
+        }
+    },
+
+    "cava": {
+        "framerate": 30,
+        "autosens": 0,
+        "sensitivity": 150,
+        "bars": 16,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pipewire",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": true,
+        "waves": true,
+        "noise_reduction": 0.2,
+        "input_delay": 2,
+        "hide_on_silence": true,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+            "on-click-right": "mode"
+        }
+    },
+
+    "wireplumber": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "  {volume}%",
+        "nospacing": 1,
+        "on-click": "/home/zach/Projects/dotfiles/scripts/volumecontrol.sh",
+        "tooltip": false
+    },
+
+
+    // Custom modules
+
+    "custom/launcher": {
+        "format": "󰣇",
+        "on-click": "wofi --show drun",
+        "tooltip": false
+    },
+
+    "custom/cat_art": {
+        "format": "•ㅅ•",
+        "tooltip": false
+    },
+
+    "custom/spotify": {
+        "format": "",
+        "on-click": "/home/zach/Projects/dotfiles/scripts/spotify.sh",
+        "tooltip": false
+    },
+
+    "custom/todo": {
+        "format": " Todo",
+        "on-click": "/home/zach/Projects/dotfiles/scripts/todolist.sh",
+        "tooltip": false
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "/home/zach/Projects/dotfiles/scripts/wofi-power-menu.sh",
+        "tooltip": false
+    }
+}
